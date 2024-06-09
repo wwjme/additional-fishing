@@ -11,12 +11,15 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "GNU (GPLv3)",
 	"icon": "assets/additionalfishing/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.wix3y.additionalfishing.AdditionalFishing"
+		],
+		"client": [
+			"net.wix3y.additionalfishing.AdditionalFishingClient"
 		],
 		"fabric-datagen": [
 			"net.wix3y.additionalfishing.AdditionalFishingDataGenerator"
