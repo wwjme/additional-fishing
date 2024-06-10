@@ -14,6 +14,7 @@ public class FishingItemGroups {
             new Identifier(AdditionalFishing.MOD_ID, "fish"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.additionalfishing"))
                     .icon(() -> new ItemStack(FishingItems.PIRANHA)).entries((displayContext, entries) -> {
+                        entries.add(FishingItems.ARCTIC_CHAR);
                         entries.add(FishingItems.ANGLERFISH);
                         entries.add(FishingItems.BASS);
                         entries.add(FishingItems.BLOBFISH);
@@ -25,8 +26,10 @@ public class FishingItemGroups {
                         entries.add(FishingItems.HERRING);
                         entries.add(FishingItems.KOI);
                         entries.add(FishingItems.PIRANHA);
+                        entries.add(FishingItems.RAINBOWFISH);
                         entries.add(FishingItems.SHRIMP);
                         entries.add(FishingItems.STARFISH);
+                        entries.add(FishingItems.TUNA);
 
                         entries.add(FishingItems.GOLDFISH_CRACKER);
                     }).build());

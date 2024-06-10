@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "additionalfishing",
-	"version": "${version}",
+	"version": "${mod_version}",
 	"name": "Additional Fishing",
-	"description": "A fabric mod enhancing your fishing experience",
+	"description": "A fabric mod enhancing the fishing experience",
 	"authors": [
 		"WIX3Y"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/",
+		"sources": "https://github.com/WIX3Y/additional-fishing"
 	},
 	"license": "GNU (GPLv3)",
 	"icon": "assets/additionalfishing/icon.png",
@@ -29,9 +29,7 @@
 		"additionalfishing.mixins.json"
 	],
 	"depends": {
-		"fabric-api": "*",
-		"fabricloader": ">=0.14",
-		"minecraft": "~1.20",
-		"java": ">=17"
+		"fabric": "*",
+		"minecraft": ">=${minecraft_min_version} <${minecraft_max_version}"
 	}
 }

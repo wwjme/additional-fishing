@@ -9,6 +9,7 @@ import net.wix3y.additionalfishing.AdditionalFishing;
 
 public class FishingItems {
     public static final Item ANGLERFISH = registerItem("anglerfish", new Item(new FabricItemSettings().food(FishingFoodComponents.ANGLERFISH)));
+    public static final Item ARCTIC_CHAR = registerItem("arctic_char", new Item(new FabricItemSettings().food(FishingFoodComponents.ARCTIC_CHAR)));
     public static final Item BASS = registerItem("bass", new Item(new FabricItemSettings().food(FishingFoodComponents.BASS)));
     public static final Item BLOBFISH = registerItem("blobfish", new Item(new FabricItemSettings()));
     public static final Item CATFISH = registerItem("catfish", new Item(new FabricItemSettings().food(FishingFoodComponents.CATFISH)));
@@ -19,8 +20,10 @@ public class FishingItems {
     public static final Item HERRING = registerItem("herring", new Item(new FabricItemSettings().food(FishingFoodComponents.HERRING)));
     public static final Item KOI = registerItem("koi", new Item(new FabricItemSettings().food(FishingFoodComponents.KOI)));
     public static final Item PIRANHA = registerItem("piranha", new Item(new FabricItemSettings().food(FishingFoodComponents.PIRANHA)));
+    public static final Item RAINBOWFISH = registerItem("rainbowfish", new Item(new FabricItemSettings().food(FishingFoodComponents.RAINBOWFISH)));
     public static final Item SHRIMP = registerItem("shrimp", new Item(new FabricItemSettings().food(FishingFoodComponents.SHRIMP)));
     public static final Item STARFISH = registerItem("starfish", new Item(new FabricItemSettings().food(FishingFoodComponents.STARFISH)));
+    public static final Item TUNA = registerItem("tuna", new Item(new FabricItemSettings().food(FishingFoodComponents.TUNA)));
 
     public static final Item GOLDFISH_CRACKER = registerItem("goldfish_cracker", new Item(new FabricItemSettings().food(FishingFoodComponents.GOLDFISH_CRACKER)));
     private static Item registerItem(String name, Item item) {
