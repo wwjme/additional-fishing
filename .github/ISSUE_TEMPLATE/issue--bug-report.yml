@@ -71,3 +71,9 @@ body:
       label: Mod list
       description: |
         If you have not tried testing the issue on a mininal instance, please provide the list of mods you are using.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: |
+        Please, provide any additional information that may help in understanding the issue.
