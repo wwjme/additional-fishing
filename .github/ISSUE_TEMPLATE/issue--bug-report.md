@@ -1,6 +1,5 @@
----
 name: 'Issue: Bug Report'
-about: Report a bug through a form.
+description: Report a bug through a form.
 body:
   - type: markdown
     attributes:
@@ -72,4 +71,3 @@ body:
       label: Mod list
       description: |
         If you have not tried testing the issue on a mininal instance, please provide the list of mods you are using.
----
