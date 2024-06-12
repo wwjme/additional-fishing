@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "group": "additionalfishing",
+  "ingredient": {
+    "item": "additionalfishing:arctic_char"
+  },
+  "result": "additionalfishing:cooked_arctic_char"
+}

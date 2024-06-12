@@ -1,6 +1,7 @@
 package net.wix3y.additionalfishing.loot;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.LocationCheckLootCondition;
@@ -18,6 +19,10 @@ import java.util.List;
 
 public class FishingFishLootTableGenerator {
     private static final Identifier FISHING_FISH_ID = new Identifier("gameplay/fishing/fish");
+    private static final int COD_COMMON = 60;
+    private static final int VERY_COMMON = 25;
+    private static final int COMMON = 15;
+    private static final int UNCOMMON = 10;
 
     // cold biomes
     public static final LootCondition.Builder NEEDS_SNOWY_PLAINS = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.SNOWY_PLAINS));
@@ -50,22 +55,23 @@ public class FishingFishLootTableGenerator {
             if (id.equals(FISHING_FISH_ID)) {
                 List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries));
 
-                entries.add(ItemEntry.builder(FishingItems.ANGLERFISH).weight(5).conditionally(NEEDS_DEEP_LUKEWARM_OCEAN.or(NEEDS_DEEP_OCEAN).or(NEEDS_DEEP_COLD_OCEAN).or(NEEDS_DEEP_FROZEN_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.ARCTIC_CHAR).conditionally(NEEDS_SNOWY_PLAINS.or(NEEDS_SNOWY_TAIGA).or(NEEDS_SNOWY_SLOPES).or(NEEDS_SNOWY_BEACH).or(NEEDS_FROZEN_PEAKS).or(NEEDS_ICE_SPIKES).or(NEEDS_JAGGED_PEAKS).or(NEEDS_STONY_SHORE).or(NEEDS_FROZEN_RIVER).or(NEEDS_COLD_OCEAN).or(NEEDS_FROZEN_OCEAN).or(NEEDS_DEEP_COLD_OCEAN).or(NEEDS_DEEP_FROZEN_OCEAN)).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.BASS).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.BLOBFISH).weight(5).conditionally(NEEDS_DEEP_LUKEWARM_OCEAN.or(NEEDS_DEEP_OCEAN).or(NEEDS_DEEP_COLD_OCEAN).or(NEEDS_DEEP_FROZEN_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.CATFISH).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.CLAM).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.CRAB_CLAW).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.FLOUNDER).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.GOLDFISH).weight(5).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.HERRING).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.KOI).weight(5).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.PIRANHA).weight(5).conditionally(NEEDS_SWAMP.or(NEEDS_MANGROVE_SWAMP).or(NEEDS_WARM_OCEAN).or(NEEDS_LUKEWARM_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.RAINBOWFISH).weight(5).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.SHRIMP).weight(5).build());
-                entries.add(ItemEntry.builder(FishingItems.STARFISH).weight(5).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN).or(NEEDS_OCEAN).or(NEEDS_DEEP_LUKEWARM_OCEAN).or(NEEDS_DEEP_OCEAN).or(NEEDS_BEACH)).build());
-                entries.add(ItemEntry.builder(FishingItems.TUNA).weight(5).build());
+                entries.add(ItemEntry.builder(FishingItems.ANGLERFISH).weight(UNCOMMON).conditionally(NEEDS_DEEP_LUKEWARM_OCEAN.or(NEEDS_DEEP_OCEAN).or(NEEDS_DEEP_COLD_OCEAN).or(NEEDS_DEEP_FROZEN_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.ARCTIC_CHAR).conditionally(NEEDS_SNOWY_PLAINS.or(NEEDS_SNOWY_TAIGA).or(NEEDS_SNOWY_SLOPES).or(NEEDS_SNOWY_BEACH).or(NEEDS_FROZEN_PEAKS).or(NEEDS_ICE_SPIKES).or(NEEDS_JAGGED_PEAKS).or(NEEDS_STONY_SHORE).or(NEEDS_FROZEN_RIVER).or(NEEDS_COLD_OCEAN).or(NEEDS_FROZEN_OCEAN).or(NEEDS_DEEP_COLD_OCEAN).or(NEEDS_DEEP_FROZEN_OCEAN)).weight(COD_COMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.BASS).weight(COMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.CATFISH).weight(UNCOMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.CLAM).weight(UNCOMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.RAW_CRAB_CLAW).weight(UNCOMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.FLOUNDER).weight(UNCOMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.GOLDFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.HERRING).weight(COMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.KOI).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.PIRANHA).weight(VERY_COMMON).conditionally(NEEDS_SWAMP.or(NEEDS_MANGROVE_SWAMP).or(NEEDS_WARM_OCEAN).or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.RAINBOWFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(Items.TROPICAL_FISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(Items.PUFFERFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.RAW_SHRIMP).weight(UNCOMMON).build());
+                entries.add(ItemEntry.builder(FishingItems.STARFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN).or(NEEDS_OCEAN).or(NEEDS_DEEP_LUKEWARM_OCEAN).or(NEEDS_DEEP_OCEAN).or(NEEDS_BEACH)).build());
+                entries.add(ItemEntry.builder(FishingItems.TUNA).weight(COMMON).build());
 
                 LootPool.Builder pool = LootPool.builder().with(entries);
                 return LootTable.builder().pool(pool).build();

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "group": "additionalfishing",
+  "ingredient": {
+    "item": "additionalfishing:arctic_char"
+  },
+  "result": "additionalfishing:cooked_arctic_char"
+}

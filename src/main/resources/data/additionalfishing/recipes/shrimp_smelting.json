@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "additionalfishing",
+  "ingredient": {
+    "item": "additionalfishing:raw_shrimp"
+  },
+  "result": "additionalfishing:shrimp"
+}

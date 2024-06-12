@@ -2,20 +2,20 @@
 
 ## Overview
 Additional fishing is a fabric mod that enhances the fishing experience in Minecraft.
-This mod improves the vanilla fishing loot table by introduces new types of fish.
-Some of these fish are available in any biome, while others are biome specific.
+This mod introduces new fish entities and improves the fishing loot table with these fish.
+Some of the fish are available in any biome, while others are biome specific.
 
-## Fish Loot Table Improvements
-The following fish have been added to the vanilla fishing loot table.
+## Fish Locations
+The following fish have been added to the biomes specified below.
 
 ### Any biome:
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/bass.png) Bass  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/catfish.png) Catfish  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/clam.png) Clam  
-&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/crab_claw.png) Crab claw  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/raw_crab_claw.png) Raw Crab claw  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/flounder.png) Flounder  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/herring.png) Herring  
-&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/shrimp.png) Shrimp  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/raw_shrimp.png) Raw Shrimp  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/tuna.png) Tuna  
 
 ### Cold/Icy/Snowy biomes:
@@ -23,7 +23,6 @@ The following fish have been added to the vanilla fishing loot table.
 
 ### Deep oceans:
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/anglerfish.png) Anglerfish  
-&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/blobfish.png) Blobfish  
 
 ### Warm/lukewarm oceans:
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/goldfish.png) Goldfish  

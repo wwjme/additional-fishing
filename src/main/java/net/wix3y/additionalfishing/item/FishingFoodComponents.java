@@ -10,20 +10,30 @@ public class FishingFoodComponents {
     public static final FoodComponent ARCTIC_CHAR = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent BASS = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent CATFISH = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
-    public static final FoodComponent CRAB_CLAW = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
+    public static final FoodComponent CLAM = new FoodComponent.Builder().hunger(2).saturationModifier(2.0f).build();
+    public static final FoodComponent RAW_CRAB_CLAW = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent FLOUNDER = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent GOLDFISH = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent HERRING = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).build();
     public static final FoodComponent KOI = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
     public static final FoodComponent PIRANHA = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).build();
     public static final FoodComponent RAINBOWFISH = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
-    public static final FoodComponent SHRIMP = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).build();
+    public static final FoodComponent RAW_SHRIMP = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).build();
     public static final FoodComponent STARFISH = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 200), 1.0f).build();
     public static final FoodComponent TUNA = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
 
-    public static final FoodComponent GOLDFISH_CRACKER = new FoodComponent.Builder().hunger(2).saturationModifier(0.1f)
+    public static final FoodComponent COOKED_PIRANHA = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_FLOUNDER = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_BASS = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_HERRING = new FoodComponent.Builder().hunger(4).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_TUNA = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_CATFISH = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent COOKED_ARCTIC_CHAR = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent CRAB_CLAW = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent GOLDFISH_CRACKER = new FoodComponent.Builder().hunger(2).saturationModifier(0.4f)
             .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 100), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 100), 1.0f).build();
+    public static final FoodComponent SHRIMP = new FoodComponent.Builder().hunger(4).saturationModifier(0.5f).build();
 }
