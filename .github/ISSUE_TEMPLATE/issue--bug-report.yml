@@ -1,0 +1,79 @@
+name: 'Issue: Bug Report'
+description: Report a bug through a form.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this form to describe your issue.
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft version
+      placeholder: | 
+        Example: 1.20.1
+    validations:
+      required: true
+  - type: input
+    id: af_version
+    attributes:
+      label: Additional fishing version
+      placeholder: |
+        Example: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: fabric_version
+    attributes:
+      label: Fabric Loader version
+      placeholder: | 
+        Example: 0.15.11
+    validations:
+      required: true
+  - type: input
+    id: fabric_api_version
+    attributes:
+      label: Fabric API version
+      placeholder: |
+        Example: 0.92.2+1.20.1
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is. If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: To Reproduce
+      description: Describe the steps to reproduce the behavior.
+      placeholder: |
+        1. 
+        2.
+        3.
+  - type: checkboxes
+    id: has_tested_minimal_instance
+    attributes:
+      label: Minimal instance
+      description: Have you tried testing the issue on a Minecraft instance containing only Additional Fishing (and mods related to the issue)?
+      options:
+        - label: I have tested this on a minimal instance
+  - type: textarea
+    id: mod_list
+    attributes:
+      label: Mod list
+      description: |
+        If you have not tried testing the issue on a mininal instance, please provide the list of mods you are using.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: |
+        Please, provide any additional information that may help in understanding the issue.
