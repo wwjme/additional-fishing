@@ -34,8 +34,7 @@ public class FishingFishLootTableGenerator {
     public static final LootCondition.Builder NEEDS_ICE_SPIKES = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.ICE_SPIKES));
     public static final LootCondition.Builder NEEDS_JAGGED_PEAKS = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.JAGGED_PEAKS));
     public static final LootCondition.Builder NEEDS_STONY_SHORE = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.STONY_SHORE));
-    // swamps & beach
-    public static final LootCondition.Builder NEEDS_SWAMP = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.SWAMP));
+    // mangrove & beach
     public static final LootCondition.Builder NEEDS_MANGROVE_SWAMP = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.MANGROVE_SWAMP));
     public static final LootCondition.Builder NEEDS_BEACH = LocationCheckLootCondition.builder(LocationPredicate.Builder.create().biome(BiomeKeys.BEACH));
     // oceans
@@ -65,7 +64,7 @@ public class FishingFishLootTableGenerator {
                 entries.add(ItemEntry.builder(FishingItems.GOLDFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
                 entries.add(ItemEntry.builder(FishingItems.HERRING).weight(COMMON).build());
                 entries.add(ItemEntry.builder(FishingItems.KOI).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
-                entries.add(ItemEntry.builder(FishingItems.PIRANHA).weight(VERY_COMMON).conditionally(NEEDS_SWAMP.or(NEEDS_MANGROVE_SWAMP).or(NEEDS_WARM_OCEAN).or(NEEDS_LUKEWARM_OCEAN)).build());
+                entries.add(ItemEntry.builder(FishingItems.PIRANHA).weight(VERY_COMMON).conditionally(NEEDS_MANGROVE_SWAMP.or(NEEDS_WARM_OCEAN).or(NEEDS_LUKEWARM_OCEAN)).build());
                 entries.add(ItemEntry.builder(FishingItems.RAINBOWFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
                 entries.add(ItemEntry.builder(Items.TROPICAL_FISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
                 entries.add(ItemEntry.builder(Items.PUFFERFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());

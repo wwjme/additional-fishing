@@ -27,8 +27,8 @@ The following fish have been added to the biomes specified below.
 ### Warm/lukewarm oceans:
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/goldfish.png) Goldfish  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/koi.png) Koi  
-&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/piranha.png) Piranha (also found in swamp/mangrove swamp)  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/piranha.png) Piranha (also found in mangrove swamp)  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/rainbowfish.png) Rainbowfish  
-&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/starfish.png) Starfish (also found in ocean/beach)  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/starfish.png) Starfish (also found in ocean & beach)  
 
 

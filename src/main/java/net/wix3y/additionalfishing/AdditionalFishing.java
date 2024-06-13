@@ -8,6 +8,7 @@ import net.wix3y.additionalfishing.entity.custom.PiranhaEntity;
 import net.wix3y.additionalfishing.item.FishingItemGroups;
 import net.wix3y.additionalfishing.item.FishingItems;
 import net.wix3y.additionalfishing.loot.FishingFishLootTableGenerator;
+import net.wix3y.additionalfishing.world.gen.FishEntityGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,5 +24,6 @@ public class AdditionalFishing implements ModInitializer {
 		FishingFishLootTableGenerator.replaceLootTable();
 		FishEntities.registerEntities();
 		FabricDefaultAttributeRegistry.register(FishEntities.PIRANHA, PiranhaEntity.createPiranhaAttributes());
+		FishEntityGeneration.addSpawns();
 	}
 }
