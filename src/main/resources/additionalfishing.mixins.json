@@ -3,7 +3,8 @@
 	"package": "net.wix3y.additionalfishing.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"CatMixin",
+		"OcelotMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
