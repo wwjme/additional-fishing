@@ -54,8 +54,10 @@ public class FishingItemGroups {
                         entries.add(FishingItems.COOKED_TUNA);
 
                         entries.add(FishingItems.PIRANHA_BUCKET);
+                        entries.add(FishingItems.SHRIMP_BUCKET);
 
                         entries.add(FishingItems.PIRANHA_SPAWN_EGG);
+                        entries.add(FishingItems.SHRIMP_SPAWN_EGG);
 
                     }).build());
     public static void registerItemGroups() {

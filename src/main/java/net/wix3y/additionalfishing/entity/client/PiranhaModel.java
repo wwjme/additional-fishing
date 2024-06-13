@@ -57,7 +57,6 @@ public class PiranhaModel<T extends PiranhaEntity> extends SinglePartEntityModel
 
 		this.animateMovement(FishAnimations.PIRANHA_SWIMMING, limbSwing, limbSwingAmount, 2f, 2.5f);
 		this.updateAnimation(entity.idleAnimationState, FishAnimations.PIRANHA_IDLE, ageInTicks, 1f);
-		this.updateAnimation(entity.attackAnimationState, FishAnimations.PIRANHA_ATTACK, ageInTicks, 1f);
 	}
 
 	@Override

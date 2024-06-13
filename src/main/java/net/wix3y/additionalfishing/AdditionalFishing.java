@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.wix3y.additionalfishing.entity.FishEntities;
 import net.wix3y.additionalfishing.entity.custom.PiranhaEntity;
+import net.wix3y.additionalfishing.entity.custom.ShrimpEntity;
 import net.wix3y.additionalfishing.item.FishingItemGroups;
 import net.wix3y.additionalfishing.item.FishingItems;
 import net.wix3y.additionalfishing.loot.FishingFishLootTableGenerator;
@@ -24,6 +25,7 @@ public class AdditionalFishing implements ModInitializer {
 		FishingFishLootTableGenerator.replaceLootTable();
 		FishEntities.registerEntities();
 		FabricDefaultAttributeRegistry.register(FishEntities.PIRANHA, PiranhaEntity.createPiranhaAttributes());
+		FabricDefaultAttributeRegistry.register(FishEntities.SHRIMP, ShrimpEntity.createShrimpAttributes());
 		FishEntityGeneration.addSpawns();
 	}
 }

@@ -3,56 +3,44 @@ package net.wix3y.additionalfishing.entity.ai;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.mob.PathAwareEntity;
-import net.wix3y.additionalfishing.entity.custom.PiranhaEntity;
+import net.minecraft.util.Hand;
 
 public class PiranhaAttackGoal extends MeleeAttackGoal {
-    private final PiranhaEntity entity;
-    private int ticksUntilNextAttack = 40;
+    private int ticksUntilNextAttack = 20;
     private boolean countUntilNextAttack = false;
 
     public PiranhaAttackGoal(PathAwareEntity mob, double speed, boolean pauseWhenMobIdle) {
         super(mob, speed, pauseWhenMobIdle);
-        entity = ((PiranhaEntity) mob);
     }
 
     @Override
     public void start() {
         super.start();
-        ticksUntilNextAttack = 40;
+        ticksUntilNextAttack = 20;
     }
 
     @Override
     protected void attack(LivingEntity target, double squaredDistance) {
-        if (isEnemyWithinAttackDistance(target, squaredDistance)) {
+        if (squaredDistance <= this.getSquaredMaxAttackDistance(target)) {
             countUntilNextAttack = true;
-            if(isTimeToAttack()) {
-                entity.setAttacking(true);
+            if(this.ticksUntilNextAttack <= 0) {
                 this.mob.getLookControl().lookAt(target.getX(), target.getEyeY(), target.getZ());
                 performAttack(target);
             }
         } else {
             resetAttackCooldown();
             countUntilNextAttack = false;
-            entity.setAttacking(false);
-            entity.attackAnimationTimeout = 0;
         }
     }
 
-    private boolean isEnemyWithinAttackDistance(LivingEntity target, double squaredDistance) {
-        return squaredDistance <= this.getSquaredMaxAttackDistance(target);
-    }
-
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.getTickCount(40);
+        this.ticksUntilNextAttack = this.getTickCount(20);
     }
 
-    protected boolean isTimeToAttack() {
-        return this.ticksUntilNextAttack <= 0;
-    }
-
-    protected void performAttack(LivingEntity pEnemy) {
+    protected void performAttack(LivingEntity target) {
         this.resetAttackCooldown();
-        this.mob.tryAttack(pEnemy);
+        this.mob.swingHand(Hand.MAIN_HAND);
+        this.mob.tryAttack(target);
     }
 
     @Override
@@ -65,7 +53,6 @@ public class PiranhaAttackGoal extends MeleeAttackGoal {
 
     @Override
     public void stop() {
-        entity.setAttacking(false);
         super.stop();
     }
 }

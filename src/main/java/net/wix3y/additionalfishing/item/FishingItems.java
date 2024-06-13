@@ -30,8 +30,10 @@ public class FishingItems {
     public static final Item TUNA = registerItem("tuna", new Item(new FabricItemSettings().food(FishingFoodComponents.TUNA)));
 
     public static final Item PIRANHA_BUCKET = registerItem("piranha_bucket", new EntityBucketItem(FishEntities.PIRANHA, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
+    public static final Item SHRIMP_BUCKET = registerItem("shrimp_bucket", new EntityBucketItem(FishEntities.SHRIMP, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
 
     public static final Item PIRANHA_SPAWN_EGG = registerItem("piranha_spawn_egg", new SpawnEggItem(FishEntities.PIRANHA, 0x6f8066, 0xa64263, new FabricItemSettings()));
+    public static final Item SHRIMP_SPAWN_EGG = registerItem("shrimp_spawn_egg", new SpawnEggItem(FishEntities.SHRIMP, 0xe68f73, 0xb35947, new FabricItemSettings()));
 
     public static final Item COOKED_PIRANHA = registerItem("cooked_piranha", new Item(new FabricItemSettings().food(FishingFoodComponents.COOKED_PIRANHA)));
     public static final Item COOKED_FLOUNDER = registerItem("cooked_flounder", new Item(new FabricItemSettings().food(FishingFoodComponents.COOKED_FLOUNDER)));
