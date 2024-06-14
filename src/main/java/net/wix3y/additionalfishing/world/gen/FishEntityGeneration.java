@@ -8,6 +8,7 @@ import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 import net.wix3y.additionalfishing.entity.FishEntities;
+import net.wix3y.additionalfishing.entity.custom.CrabEntity;
 
 public class FishEntityGeneration {
     public static void addSpawns() {
@@ -17,5 +18,10 @@ public class FishEntityGeneration {
 
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.OCEAN, BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_COLD_OCEAN),
                 SpawnGroup.WATER_AMBIENT, FishEntities.SHRIMP, 3, 5, 12);
+        SpawnRestriction.register(FishEntities.SHRIMP, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FishEntity::canSpawn);
+
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
+                SpawnGroup.CREATURE, FishEntities.CRAB, 5, 1, 3);
+        SpawnRestriction.register(FishEntities.CRAB, SpawnRestriction.Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, CrabEntity::canSpawn);
     }
 }

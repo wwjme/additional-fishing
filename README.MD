@@ -6,7 +6,7 @@ This mod introduces new fish entities and improves the fishing loot table with t
 Some of the fish are available in any biome, while others are biome specific.
 
 ## Fish Locations
-The following fish have been added to the biomes specified below.
+The following fish have been added to the fishing loot table in the biomes specified below.
 
 ### Any biome:
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/bass.png) Bass  

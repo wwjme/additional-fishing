@@ -58,6 +58,7 @@ public class FishingItemGroups {
 
                         entries.add(FishingItems.PIRANHA_SPAWN_EGG);
                         entries.add(FishingItems.SHRIMP_SPAWN_EGG);
+                        entries.add(FishingItems.CRAB_SPAWN_EGG);
 
                     }).build());
     public static void registerItemGroups() {
