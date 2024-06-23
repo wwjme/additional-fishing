@@ -1,4 +1,4 @@
-name: 'Issue: Bug Report'
+name: 'Bug Report'
 description: Report a bug through a form.
 body:
   - type: markdown
