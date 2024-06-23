@@ -22,7 +22,7 @@
               "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "additionalfishing:crab_claw"
+          "name": "additionalfishing:raw_crab_claw"
         }
       ],
       "rolls": 1.0

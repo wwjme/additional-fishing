@@ -22,7 +22,7 @@
               "function": "minecraft:furnace_smelt"
             }
           ],
-          "name": "additionalfishing:shrimp"
+          "name": "additionalfishing:raw_shrimp"
         }
       ],
       "rolls": 1.0
