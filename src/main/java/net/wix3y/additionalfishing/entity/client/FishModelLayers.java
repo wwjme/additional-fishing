@@ -8,4 +8,7 @@ public class FishModelLayers {
     public static final EntityModelLayer PIRANHA = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "piranha"), "main");
     public static final EntityModelLayer SHRIMP = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "shrimp"), "main");
     public static final EntityModelLayer CRAB = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "crab"), "main");
+    public static final EntityModelLayer ANGLERFISH = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "anglerfish"), "main");
+    public static final EntityModelLayer ARCTIC_CHAR = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "arctic_char"), "main");
+    public static final EntityModelLayer BASS = new EntityModelLayer(new Identifier(AdditionalFishing.MOD_ID, "bass"), "main");
 }

@@ -53,9 +53,15 @@ public class FishingItemGroups {
                         entries.add(FishingItems.TUNA);
                         entries.add(FishingItems.COOKED_TUNA);
 
+                        entries.add(FishingItems.ANGLERFISH_BUCKET);
+                        entries.add(FishingItems.ARCTIC_CHAR_BUCKET);
+                        entries.add(FishingItems.BASS_BUCKET);
                         entries.add(FishingItems.PIRANHA_BUCKET);
                         entries.add(FishingItems.SHRIMP_BUCKET);
 
+                        entries.add(FishingItems.ANGLERFISH_SPAWN_EGG);
+                        entries.add(FishingItems.ARCTIC_CHAR_SPAWN_EGG);
+                        entries.add(FishingItems.BASS_SPAWN_EGG);
                         entries.add(FishingItems.PIRANHA_SPAWN_EGG);
                         entries.add(FishingItems.SHRIMP_SPAWN_EGG);
                         entries.add(FishingItems.CRAB_SPAWN_EGG);

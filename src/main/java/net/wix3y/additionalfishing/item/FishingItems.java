@@ -31,10 +31,16 @@ public class FishingItems {
 
     public static final Item PIRANHA_BUCKET = registerItem("piranha_bucket", new EntityBucketItem(FishEntities.PIRANHA, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
     public static final Item SHRIMP_BUCKET = registerItem("shrimp_bucket", new EntityBucketItem(FishEntities.SHRIMP, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
+    public static final Item ANGLERFISH_BUCKET = registerItem("anglerfish_bucket", new EntityBucketItem(FishEntities.ANGLERFISH, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
+    public static final Item ARCTIC_CHAR_BUCKET = registerItem("arctic_char_bucket", new EntityBucketItem(FishEntities.ARCTIC_CHAR, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
+    public static final Item BASS_BUCKET = registerItem("bass_bucket", new EntityBucketItem(FishEntities.BASS, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new FabricItemSettings().maxCount(1)));
 
     public static final Item PIRANHA_SPAWN_EGG = registerItem("piranha_spawn_egg", new SpawnEggItem(FishEntities.PIRANHA, 0x779977, 0xbb5577, new FabricItemSettings()));
     public static final Item SHRIMP_SPAWN_EGG = registerItem("shrimp_spawn_egg", new SpawnEggItem(FishEntities.SHRIMP, 0xee8877, 0xffccbb, new FabricItemSettings()));
     public static final Item CRAB_SPAWN_EGG = registerItem("crab_spawn_egg", new SpawnEggItem(FishEntities.CRAB, 0xee8844, 0xffddbb, new FabricItemSettings()));
+    public static final Item ANGLERFISH_SPAWN_EGG = registerItem("anglerfish_spawn_egg", new SpawnEggItem(FishEntities.ANGLERFISH, 0x665544, 0xb3aca2, new FabricItemSettings()));
+    public static final Item ARCTIC_CHAR_SPAWN_EGG = registerItem("arctic_char_spawn_egg", new SpawnEggItem(FishEntities.ARCTIC_CHAR, 0x887766, 0xcc6655, new FabricItemSettings()));
+    public static final Item BASS_SPAWN_EGG = registerItem("bass_spawn_egg", new SpawnEggItem(FishEntities.BASS, 0x556655, 0xbbbb99, new FabricItemSettings()));
 
     public static final Item COOKED_PIRANHA = registerItem("cooked_piranha", new Item(new FabricItemSettings().food(FishingFoodComponents.COOKED_PIRANHA)));
     public static final Item COOKED_FLOUNDER = registerItem("cooked_flounder", new Item(new FabricItemSettings().food(FishingFoodComponents.COOKED_FLOUNDER)));
