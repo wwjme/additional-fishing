@@ -1,4 +1,4 @@
-name: 'Issue: Bug Report'
+name: 'Bug Report'
 description: Report a bug through a form.
 body:
   - type: markdown
@@ -27,14 +27,6 @@ body:
       label: Fabric Loader version
       placeholder: | 
         Example: 0.15.11
-    validations:
-      required: true
-  - type: input
-    id: fabric_api_version
-    attributes:
-      label: Fabric API version
-      placeholder: |
-        Example: 0.92.2+1.20.1
     validations:
       required: true
   - type: textarea
