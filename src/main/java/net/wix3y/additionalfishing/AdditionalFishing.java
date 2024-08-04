@@ -3,6 +3,8 @@ package net.wix3y.additionalfishing;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.wix3y.additionalfishing.block.FishBlocks;
+import net.wix3y.additionalfishing.blockentity.FishBlockEntities;
 import net.wix3y.additionalfishing.entity.FishEntities;
 import net.wix3y.additionalfishing.entity.custom.*;
 import net.wix3y.additionalfishing.item.FishingItemGroups;
@@ -21,6 +23,8 @@ public class AdditionalFishing implements ModInitializer {
 		LOGGER.info("Loading " + MOD_ID);
 		FishingItemGroups.registerItemGroups();
 		FishingItems.registerModItems();
+		FishBlocks.registerFishBlocks();
+		FishBlockEntities.registerBlockEntities();
 		FishingFishLootTableGenerator.replaceLootTable();
 		FishEntities.registerEntities();
 		FabricDefaultAttributeRegistry.register(FishEntities.PIRANHA, PiranhaEntity.createPiranhaAttributes());
@@ -29,6 +33,8 @@ public class AdditionalFishing implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(FishEntities.ANGLERFISH, AnglerfishEntity.createAnglerfishAttributes());
 		FabricDefaultAttributeRegistry.register(FishEntities.ARCTIC_CHAR, ArcticCharEntity.createArcticCharAttributes());
 		FabricDefaultAttributeRegistry.register(FishEntities.BASS, BassEntity.createBassAttributes());
+		FabricDefaultAttributeRegistry.register(FishEntities.KOI, KoiEntity.createBassAttributes());
+		FabricDefaultAttributeRegistry.register(FishEntities.GOLDFISH, GoldfishEntity.createBassAttributes());
 		FishEntityGeneration.addSpawns();
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "additionalfishing:block/aquarium"
+    },
+    "facing=south": {
+      "model": "additionalfishing:block/aquarium",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "additionalfishing:block/aquarium",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "additionalfishing:block/aquarium",
+      "y": 270
+    }
+  }
+}

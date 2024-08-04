@@ -41,6 +41,16 @@ public class FishEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_AMBIENT, BassEntity::new)
                     .dimensions(EntityDimensions.fixed(0.4f, 0.3f)).build());
 
+    public static final EntityType<KoiEntity> KOI = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(AdditionalFishing.MOD_ID, "koi"),
+            FabricEntityTypeBuilder.create(SpawnGroup.WATER_AMBIENT, KoiEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.4f, 0.3f)).build());
+
+    public static final EntityType<GoldfishEntity> GOLDFISH = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(AdditionalFishing.MOD_ID, "goldfish"),
+            FabricEntityTypeBuilder.create(SpawnGroup.WATER_AMBIENT, GoldfishEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.4f, 0.3f)).build());
+
     public static void registerEntities() {
         AdditionalFishing.LOGGER.info("Registering Entities for " + AdditionalFishing.MOD_ID);
     }

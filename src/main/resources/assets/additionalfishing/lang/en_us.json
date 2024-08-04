@@ -19,12 +19,16 @@
   "item.additionalfishing.anglerfish_bucket": "Bucket of Anglerfish",
   "item.additionalfishing.arctic_char_bucket": "Bucket of Arctic Char",
   "item.additionalfishing.bass_bucket": "Bucket of Bass",
+  "item.additionalfishing.koi_bucket": "Bucket of Koi",
+  "item.additionalfishing.goldfish_bucket": "Bucket of Goldfish",
   "item.additionalfishing.piranha_spawn_egg": "Piranha Spawn Egg",
   "item.additionalfishing.shrimp_spawn_egg": "Shrimp Spawn Egg",
   "item.additionalfishing.crab_spawn_egg": "Crab Spawn Egg",
   "item.additionalfishing.anglerfish_spawn_egg": "Anglerfish Spawn Egg",
   "item.additionalfishing.arctic_char_spawn_egg": "Arcitc Char Spawn Egg",
   "item.additionalfishing.bass_spawn_egg": "Bass Spawn Egg",
+  "item.additionalfishing.koi_spawn_egg": "Koi Spawn Egg",
+  "item.additionalfishing.goldfish_spawn_egg": "Goldfish Spawn Egg",
   "item.additionalfishing.cooked_piranha": "Cooked Piranha",
   "item.additionalfishing.cooked_flounder": "Cooked Flounder",
   "item.additionalfishing.cooked_bass": "Cooked Bass",
@@ -35,5 +39,6 @@
   "item.additionalfishing.goldfish_cracker": "Goldfish Cracker",
   "item.additionalfishing.shrimp": "Shrimp",
   "item.additionalfishing.crab_claw": "Crab Claw",
+  "block.additionalfishing.aquarium": "Aquarium",
   "itemgroup.additionalfishing": "Additional Fishing"
 }

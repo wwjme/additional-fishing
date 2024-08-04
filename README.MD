@@ -37,6 +37,13 @@ The following fish spawn naturally in different water biomes.
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/anglerfish.png) Anglerfish  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/arctic_char.png) Arctic char  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/bass.png) Bass  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/goldfish.png) Goldfish  
+&nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/koi.png) Koi  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/piranha.png) Piranha  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/shrimp.png) Shrimp  
 &nbsp;&nbsp;&nbsp;![](src/main/resources/assets/additionalfishing/textures/item/crab_claw.png) Crab (spawns on beaches)  
+
+## Aquariums
+Additional Fishing adds decorative aquariums to minecraft. Each aquarium can hold one fish and can be decorated with up to four different corals.
+&nbsp;&nbsp;&nbsp;![](aquarium.png)
+

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.wix3y.additionalfishing.AdditionalFishing;
+import net.wix3y.additionalfishing.block.FishBlocks;
 
 public class FishingItemGroups {
     public static final ItemGroup ADDITIONAL_FISHING_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -58,6 +59,8 @@ public class FishingItemGroups {
                         entries.add(FishingItems.BASS_BUCKET);
                         entries.add(FishingItems.PIRANHA_BUCKET);
                         entries.add(FishingItems.SHRIMP_BUCKET);
+                        entries.add(FishingItems.KOI_BUCKET);
+                        entries.add(FishingItems.GOLDFISH_BUCKET);
 
                         entries.add(FishingItems.ANGLERFISH_SPAWN_EGG);
                         entries.add(FishingItems.ARCTIC_CHAR_SPAWN_EGG);
@@ -65,6 +68,10 @@ public class FishingItemGroups {
                         entries.add(FishingItems.PIRANHA_SPAWN_EGG);
                         entries.add(FishingItems.SHRIMP_SPAWN_EGG);
                         entries.add(FishingItems.CRAB_SPAWN_EGG);
+                        entries.add(FishingItems.KOI_SPAWN_EGG);
+                        entries.add(FishingItems.GOLDFISH_SPAWN_EGG);
+
+                        entries.add(FishBlocks.AQUARIUM);
 
                     }).build());
     public static void registerItemGroups() {

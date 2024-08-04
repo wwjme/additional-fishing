@@ -38,5 +38,14 @@ public class FishEntityGeneration {
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.OCEAN, BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_LUKEWARM_OCEAN, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_COLD_OCEAN, BiomeKeys.RIVER),
                 SpawnGroup.WATER_AMBIENT, FishEntities.BASS, 10, 1, 5);
         SpawnRestriction.register(FishEntities.BASS, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FishEntity::canSpawn);
+
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.WARM_OCEAN),
+                SpawnGroup.WATER_AMBIENT, FishEntities.KOI, 15, 2, 5);
+        SpawnRestriction.register(FishEntities.KOI, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FishEntity::canSpawn);
+
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN, BiomeKeys.WARM_OCEAN),
+                SpawnGroup.WATER_AMBIENT, FishEntities.GOLDFISH, 15, 2, 4);
+        SpawnRestriction.register(FishEntities.GOLDFISH, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FishEntity::canSpawn);
+
     }
 }
