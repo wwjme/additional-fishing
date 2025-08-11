@@ -66,7 +66,6 @@ entries.add(ItemEntry.builder(FishingItems.HERRING).weight(COMMON).build());
 entries.add(ItemEntry.builder(FishingItems.KOI).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
 entries.add(ItemEntry.builder(FishingItems.PIRANHA).weight(VERY_COMMON).conditionally(NEEDS_MANGROVE_SWAMP.or(NEEDS_WARM_OCEAN).or(NEEDS_LUKEWARM_OCEAN)).build());
 entries.add(ItemEntry.builder(FishingItems.RAINBOWFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
-entries.add(ItemEntry.builder(Items.TROPICAL_FISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
 entries.add(ItemEntry.builder(Items.PUFFERFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
 entries.add(ItemEntry.builder(FishingItems.RAW_SHRIMP).weight(UNCOMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN)).build());
 entries.add(ItemEntry.builder(FishingItems.STARFISH).weight(COMMON).conditionally(NEEDS_WARM_OCEAN.or(NEEDS_LUKEWARM_OCEAN).or(NEEDS_OCEAN).or(NEEDS_DEEP_LUKEWARM_OCEAN).or(NEEDS_DEEP_OCEAN).or(NEEDS_BEACH)).build());
